@@ -1,0 +1,50 @@
+.container {
+	width: 600px;
+	height: 150px;
+	border: 5px solid #333;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+
+	/* flex-direction */
+	/*flex-direction: column-reverse;*/
+
+	/* flex-wrap: wrap items if not fit */
+	flex-wrap: wrap;
+
+	/* justify-content: align within main axis */
+	/*justify-content: space-around;*/
+
+	/* align-items: align within cross axis */
+	/*align-items: flex-start;*/
+
+	/* align content: 
+  align content within cross axis (only works if there is more than one line) */
+
+	/*align-content: stretch;*/
+}
+
+.container div {
+	/*width: 120px;
+	height: 120px;*/
+	margin: 2px;
+  flex: 1;
+	background-color: rgb(66, 203, 237);
+}
+
+/* Flex item property */
+
+/** order : specify the position of an item in container */
+/*.satu {order: 3;}
+.dua {order: 4;}
+.tiga {order: 2;}
+.empat {order: 1;}*/
+
+/** flex-grow or flex : set the size of an item that relative to other items */
+
+/** align-self : align only current item in the container */
+.container div.dua {
+  flex: 3;
+  align-self: center;
+}
